@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Nunito', sans-serif;
+  color: #263746;
+  background: #f8fbff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary: #9bd8f5;
+  --primary-dark: #4daedb;
+  --background: #f8fbff;
+  --white: #ffffff;
+  --text: #263746;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 6%;
+  background: var(--white);
+  border-bottom: 1px solid #eaf1f7;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--primary-dark);
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.nav-links,
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a,
+.login-link {
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.login-link:hover {
+  color: var(--primary-dark);
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.register-button {
+  padding: 11px 18px;
+  background: var(--primary);
+  color: #19394b;
+  border-radius: 12px;
+  font-weight: 800;
+  transition: background 0.2s;
+}
+
+.register-button:hover {
+  background: #80c9ed;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 16px 5%;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .nav-actions {
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}
